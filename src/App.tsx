@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +9,7 @@ import CameraViews from "./pages/CameraViews";
 import Alerts from "./pages/Alerts";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
+import MLSettings from "./pages/MLSettings";
 import Layout from "./components/Layout";
 import NotFound from "./pages/NotFound";
 
@@ -26,6 +28,7 @@ const App = () => (
             <Route path="alerts" element={<Alerts />} />
             <Route path="analytics" element={<Analytics />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="ml-settings" element={<MLSettings />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
